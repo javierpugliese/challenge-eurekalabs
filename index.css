@@ -8,15 +8,10 @@ div.card-container {
   margin: 1rem 0;
 }
 
-div.card-container::after {
-  content: "";
-  flex: auto;
-}
-
 div.card {
   position: relative;
   flex: 0 1 49%;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   transition: 0.3s;
   letter-spacing: 1px;
   z-index: 25;
@@ -180,10 +175,6 @@ div.search-count {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {}
-
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
@@ -191,11 +182,3 @@ div.search-count {
     flex: 0 1 16% !important;
   }
 }
-
-/* X-Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-
-@media (min-width: 1400px) {}

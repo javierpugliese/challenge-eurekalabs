@@ -1,0 +1,8 @@
+div.card-container::after {
+  content: "";
+  flex: auto;
+}
+
+div.card {
+  margin: 1rem !important;
+}
