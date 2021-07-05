@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="base.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <title>Marvel Character List</title>
+  <script src="https://kit.fontawesome.com/6716e9a678.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a class="nav-brand" href="#"><i class="fas fa-file-code"></i> <span>Frontend challenge</span></a>
+        <a href="index.html"><i class="fas fa-spider spider"></i> <span class="active">Characters</span></a>
+        <a href="favourites.html"><i class="fas fa-star star"></i> <span>Favourites</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:48px">Frontend Challenge</h1>
+        <div class="white-border"></div>
+        <p>by Javier Pugliese</p>
+        <a class="social-media" href="https://www.linkedin.com/in/javier-pugliese" target="_blank">
+          <i class="fab fa-linkedin"></i> View Profile</a>
+      </div>
+    </section>
+
+    <article class="container">
+      <!-- Content -->
+      <section class="content">
+        <h2 class="subtitle">Marvel Characters List</h2>
+
+        <div class="search-dropdown">
+          <input class="search" type="text" placeholder="Search...">
+          <div class="search-content hide">
+          </div>
+        </div>
+
+        <div class="search-count"></div>
+
+        <div class="red-border"></div>
+
+        <!-- Character cards -->
+        <div class="card-container"></div>
+
+        <div class="red-border"></div>
+
+        <!-- Pagination -->
+        <div class="pagination-container">
+          <button id="prev" class="page-btn"><i class="fas fa-caret-left"></i> Prev</button>
+          <div class="pagination" style="text-align: center;">
+          </div>
+          <button id="next" class="page-btn">Next <i class="fas fa-caret-right"></i></button>
+        </div>
+      </section>
+    </article>
+
+    <div class="pre-footer">
+      <div class="container">
+        <div class="logo-container">
+          <a href="https://eurekalabs.io/" target="_blank">
+            <img src="assets/eureka-labs_logo_color.png" alt="Eureka Labs Logo" class="figure">
+          </a>
+          <a href="https://www.marvel.com/" target="_blank">
+            <img src="assets/Marvel_Logo.png" alt="Marvel Logo" class="figure">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Developed for Eureka Labs by <a href="https://www.linkedin.com/in/javier-pugliese" target="_blank">Javier
+          Pugliese</a>
+        2021.
+      </p>
+    </footer>
+  </main>
+
+</body>
+<!-- Import md5 to hash apikey -->
+<script src="md5.js"></script>
+<script src="base.js"></script>
+<script src="index.js"></script>
+
+</html>

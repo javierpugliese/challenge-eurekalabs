@@ -1,0 +1,117 @@
+div.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid gray;
+  color: #f2f3f4;
+  background-color: #151515;
+}
+
+div.card-content {
+  flex-direction: column;
+  flex: 1;
+}
+
+div.card-content div {
+  padding: 2rem 3rem;
+}
+
+div.card-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+div.card-text {
+  padding: 0 3rem !important;
+  text-align: left;
+  text-justify: inter-word;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+div.card-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button.action-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0.1rem;
+  text-transform: uppercase;
+  transition: ease-in-out .3s;
+  margin: 1rem 0;
+}
+
+button.fav-btn {
+  color: #FFFF00;
+}
+
+button.back-btn {
+  color: #e62429;
+}
+
+button.action-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+div.card-image {
+  flex: 1;
+}
+
+img.detail-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.5rem solid #e62429;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  div.card-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  div.card {
+    flex-direction: row;
+  }
+  img.detail-image {
+    border-right: 0.5rem solid #e62429;
+    border-bottom: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  button.action-btn {
+    font-size: 20px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+  button.action-btn {
+    font-size: 24px;
+  }
+}
